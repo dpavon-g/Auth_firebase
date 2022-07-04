@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
 </head>
 <body>
-    <input type="button" onclick="login()" value="Click me">
-    <script>
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "firebase/app";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-        apiKey: "AIzaSyCPf5TdDHzCiJ__PWZ3DmVMA0ImHAAosyk",
-        authDomain: "todo-94fc1.firebaseapp.com",
-        databaseURL: "https://todo-94fc1-default-rtdb.europe-west1.firebasedatabase.app",
-        projectId: "todo-94fc1",
-        storageBucket: "todo-94fc1.appspot.com",
-        messagingSenderId: "601579302221",
-        appId: "1:601579302221:web:287a97ae19eb7b2cb7db04"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-    </script>
-    <script src="index.js"></script>
+	<input type="button" onclick="login()" value="Click me">
+	<script type="module">
+	// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+		import { } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js"
+		import { } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js"
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPf5TdDHzCiJ__PWZ3DmVMA0ImHAAosyk",
+			authDomain: "todo-94fc1.firebaseapp.com",
+			databaseURL: "https://todo-94fc1-default-rtdb.europe-west1.firebasedatabase.app",
+			projectId: "todo-94fc1",
+			storageBucket: "todo-94fc1.appspot.com",
+			messagingSenderId: "601579302221",
+			appId: "1:601579302221:web:287a97ae19eb7b2cb7db04"
+		};
+	// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+	</script>
+	<script src="index.js"></script>
 </body>
 </html>
